@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.timer {
+    width: 100%;
+    height: 20vh;
+    font-size: 96px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.buttons-block {
+    width: 50%;
+    height: 10vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+button {
+    width: 100px;
+    height: 40px;
+    border-radius: 3px;
+    background-color: sienna;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+button[disabled] {
+    background-color: rgb(87, 73, 66);
+    color: gray;
+}
+.buttons-block > button:hover {
+    box-shadow: 0 0 10px -4px black;
+    width: 101px;
+    height: 41px;
+}
+.buttons-block > button:active {
+    background-color: rgb(163, 100, 70);
+}
+
+.puzzles-container {
+    width: 70%;
+    height: 70vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.puzzle {
+    width: 400px;
+    height: 400px;
+    outline: 1px solid;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.piece {
+    width: 100px;
+    height: 100px;
+    /* padding: 3px; */
+}
+.item {
+    width: 100%;
+    height: 100%;
+    background-image: url("Messi-1.jpg");
+}
+
+.p1 {
+    background-position: 0px 0px;
+}
+.p2 {
+    background-position: -100px 0px;
+}
+.p3 {
+    background-position: -200px 0px;
+}
+.p4 {
+    background-position: -300px 0px;
+}
+.p5 {
+    background-position: 0px -100px;
+}
+.p6 {
+    background-position: -100px -100px;
+}
+.p7 {
+    background-position: -200px -100px;
+}
+.p8 {
+    background-position: -300px -100px;
+}
+.p9 {
+    background-position: 0px -200px;
+}
+.p10 {
+    background-position: -100px -200px;
+}
+.p11 {
+    background-position: -200px -200px;
+}
+.p12 {
+    background-position: -300px -200px;
+}
+.p13 {
+    background-position: 0px -300px;
+}
+.p14 {
+    background-position: -100px -300px;
+}
+.p15 {
+    background-position: -200px -300px;
+}
+.p16 {
+    background-position: -300px -300px;
+}
+/* модалка */
+
+.modal-container {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    opacity: 0;
+    position: relative;
+    top: -100vh;
+    left: 0;
+    z-index: -1;
+}
+.modal {
+    width: 600px;
+    height: 200px;
+    border-radius: 6px;
+    background-color: rgb(241, 225, 225);
+    margin: auto;
+    position: absolute;
+    top: -200px;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.modal-text {
+    width: 100%;
+    height: 80px;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+    margin-top: 4%;
+    font-size: 30px;
+    line-height: 80px;
+    text-align: center;
+}
+.modal-buttons {
+    width: 30%;
+    margin: 4% auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.modal-btn-close {
+    background-color: red;
+}
+.modal-btn-check {
+    background-color: green;
+}
+.modal button {
+    display: block;
+    border-radius: 4px;
+    width: 70px;
+}
+.modal button:hover {
+    box-shadow: 0 0 6px 0px grey;
+    font-size: 18.5px;
+    transition: 0.05s;
+}
